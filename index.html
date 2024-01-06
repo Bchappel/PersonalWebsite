@@ -4,6 +4,8 @@
         <title>Braedan Chappel</title>
         <!-- Add favicon -->
         <link rel="icon" href="assets/src/images/ICO.png">
+        <img id="scrollImage" src="assets/src/images/Animation/img0.png">
+
         <style>
             /* Add @font-face rule */
             @font-face {
@@ -14,15 +16,15 @@
             /* Add @font-face rule for the second font */
             @font-face {
                 font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
-                src: url('assets/fonts/HelveticaNeueLight.ttf');  /* URL to the second font file */
+                src: url('assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
             }
 
             /* Use the custom font */
             body {
-                font-family: 'Helvetica-Neue', 'HelveticaNeueLight.ttf', sans-serif;
+                font-family: 'Helvetica-Neue', 'HelveticaNeue-Light.otf', sans-serif;
                 
                 /*Background Image*/
-                background-image: url('assets/src/images/alternateBG.png');
+                background-image: url('assets/src/images/BG.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                
@@ -65,6 +67,16 @@
             }
         </style>
     
+        <style>
+            #scrollImage {
+                position: fixed; /* Fix position on the page */
+                right: 0; /* Position on the right */
+                top: 50%; /* Position at the middle of the page */
+                transform: translateY(-50%); /* Center the image vertically */
+                width: 750px; /* Set the width */
+                height: 750px; /* Set the height */
+            }
+        </style>
 
         <!--textbox-->
         <style>
@@ -89,6 +101,7 @@
 
         </style>
     </head>
+    
     <body>
         <div class="toolbar">
             <a href="#projects">Projects</a>
@@ -111,6 +124,25 @@
                 In every project I undertake, my goal is to deliver software of the highest quality - software that meets the needs of its users, performs efficiently, and stands the test of time.                 
                 <br><br>I look forward to bringing my commitment to quality and good software practices to any potential teams.
                 </p>
-        </div>  
+        </div>
+
+        <script>
+            // Array of images
+            var images = ["assets/src/images/Animation/img0.png", "assets/src/images/Animation/img1.png", "assets/src/images/Animation/img2.png", "assets/src/images/Animation/img3.png", "assets/src/images/Animation/img4.png"];
+            
+            var index = 0;
+            
+            // Listen for scroll event
+            window.addEventListener('scroll', function() {
+              // Calculate scroll position
+              var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+              
+              // Calculate index of image to show
+              index = Math.floor(scrollPosition / 700) % images.length;
+              
+              // Change image
+              document.getElementById('scrollImage').src = images[index];
+            });
+        </script>            
     </body>
 </html>
