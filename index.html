@@ -37,6 +37,7 @@
             .toolbar {
                 display: inline-block;
                 background-color: #333;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
                 overflow: hidden;
                 border-radius: 6px;
                 padding: 4px;  /* Add padding to toolbar */
@@ -44,6 +45,7 @@
             
             .toolbar a {
                 display: inline-block;
+                transition: background-color 0.3s ease;
                 color: #eaeaea;
                 text-align: center;
                 padding: 4px 16px;  /* Reduce vertical padding */
@@ -54,11 +56,11 @@
             
             .toolbar a:hover {
                 background-color: #eaeaea;
-                color: black;
+                color: #333;
             }
             
             .toolbar a.active {
-                background-color: #0b0b0b;
+                background-color: #222222;
                 color: #eaeaea;
             }
         </style>
@@ -70,10 +72,10 @@
             .textbox {
                 position: absolute;
                 left: 1;  /* Align to the left */
-                width: 70%;  /* Adjust the width as needed */
+                width: 36.3%;  /* Adjust the width as needed */
                 height: auto;  /* Adjust the height as needed */
                 padding: 4px;  /* Same padding as the toolbar */
-                font-size: 20px;  /* Adjust the font size as needed */
+                font-size: 18px;  /* Adjust the font size as needed */
                 border-radius: 6px;  /* Rounded edges */
                 background-color: transparent;  /* Grey background */
             }
@@ -81,7 +83,7 @@
             /* Add padding to the paragraph inside the textbox */
             .textbox p {
                 padding: 10px;  /* Adjust as needed */
-                font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
+                font-family: 'Helvetica-Neue', sans-serif;  /* Change the font as needed */
                 color: #333;  /* Change the color as needed */
             }
 
@@ -112,7 +114,7 @@
                 
                 In every project I undertake, my goal is to deliver software of the highest quality - software that meets the needs of its users, performs efficiently, and stands the test of time. 
                 
-                <br><br>I look forward to bringing my commitment to quality and good software practices any potential teams.
+                <br><br>I look forward to bringing my commitment to quality and good software practices to any potential teams.
                 </p>
         </div>  
     </body>
