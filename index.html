@@ -22,10 +22,13 @@
                 font-family: 'Helvetica-Neue', 'HelveticaNeueLight.ttf', sans-serif;
                 
                 /*Background Image*/
-                background-image: url('assets/src/images/BG.png');
+                background-image: url('assets/src/images/alternateBG.png');
                 background-repeat: no-repeat;
                 background-size: cover;
-                
+               
+                /* Set a minimum height */
+                min-height: 4320px;  /* Adjust as needed */
+        
                 /*Top Bar*/
                 justify-content: center;
                 margin: 6; /*float from the top of the screen for the menue bar*/
@@ -67,19 +70,19 @@
             .textbox {
                 position: absolute;
                 left: 1;  /* Align to the left */
-                width: 48.8%;  /* Adjust the width as needed */
+                width: 70%;  /* Adjust the width as needed */
                 height: auto;  /* Adjust the height as needed */
                 padding: 4px;  /* Same padding as the toolbar */
                 font-size: 20px;  /* Adjust the font size as needed */
                 border-radius: 6px;  /* Rounded edges */
-                background-color: #333;  /* Grey background */
+                background-color: transparent;  /* Grey background */
             }
             
             /* Add padding to the paragraph inside the textbox */
             .textbox p {
                 padding: 10px;  /* Adjust as needed */
                 font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
-                color: #eaeaea;  /* Change the color as needed */
+                color: #333;  /* Change the color as needed */
             }
 
         </style>
@@ -97,7 +100,7 @@
 
         <!-- Add the new text box -->
         <div class="textbox">
-            <p>Welcome! <br><br> I'm Braedan Chappel. I'm a second year Software Engineering co-op student at the University of Guelph, in Guelph, Ontario Canada.</p>
+            <p>Hello and Welcome! <br><br> I'm Braedan Chappel. I'm a second year Software Engineering co-op student at the University of Guelph, in Guelph, Ontario Canada.</p>
         </div>  
     </body>
 </html>
