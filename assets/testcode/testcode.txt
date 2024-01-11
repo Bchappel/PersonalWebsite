@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Braedan Chappel</title>
+        <!-- Add favicon -->
+        <link rel="icon" href="assets/src/images/ICO.png">
+        <img id="scrollImage" src="assets/src/images/Animation/img0.png">
+
+        <style>
+            /* Add @font-face rule */
+            @font-face {
+                font-family: 'Helvetica-Neue';  /* Define a name for the font */
+                src: url('assets/fonts/HelveticaNeue-Medium.otf');  /* URL to the font file */
+            }
+
+            /* Add @font-face rule for the second font */
+            @font-face {
+                font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
+                src: url('assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
+            }
+
+            /* Use the custom font */
+            body {
+                font-family: 'Helvetica-Neue', 'HelveticaNeue-Light.otf', sans-serif;
+                
+                /*Background Image*/
+                background-image: url('assets/src/images/BG.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+               
+                /* Set a minimum height */
+                min-height: 4320px;  /* Adjust as needed */
+        
+                /*Top Bar*/
+                justify-content: center;
+                margin: 6; /*float from the top of the screen for the menue bar*/
+            }
+            
+            .toolbar {
+                display: inline-block;
+                background-color: #333;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+                overflow: hidden;
+                border-radius: 6px;
+                padding: 4px;  /* Add padding to toolbar */
+            }
+            
+            .toolbar a {
+                display: inline-block;
+                transition: background-color 0.3s ease;
+                color: #eaeaea;
+                text-align: center;
+                padding: 4px 16px;  /* Reduce vertical padding */
+                text-decoration: none;
+                font-size: 16px;
+                border-radius: 6px;
+            }
+            
+            .toolbar a:hover {
+                background-color: #eaeaea;
+                color: #333;
+            }
+            
+            .toolbar a.active {
+                background-color: #222222;
+                color: #eaeaea;
+            }
+            
+        </style>
+    
+        <style>
+            #scrollImage {
+                position: fixed; /* Fix position on the page */
+                right: 0; /* Position on the right */
+                top: 50%; /* Position at the middle of the page */
+                transform: translateY(50%); /* Center the image vertically */
+                transform: translateX(25%);
+                width: 750px; /* Set the width */
+                height: 750px; /* Set the height */
+            }
+        </style>
+
+        <!--textbox-->
+        <style>
+            /* Add a new style for the text box */
+            .textbox {
+                position: absolute;
+                left: 1;  /* Align to the left */
+                width: 36.3%;  /* Adjust the width as needed */
+                height: auto;  /* Adjust the height as needed */
+                padding: 4px;  /* Same padding as the toolbar */
+                font-size: 18px;  /* Adjust the font size as needed */
+                border-radius: 6px;  /* Rounded edges */
+                background-color: transparent;  /* Grey background */
+            }
+            
+            /* Add padding to the paragraph inside the textbox */
+            .textbox p {
+                padding: 8px;  /* Adjust as needed */
+                font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
+                color: #333;  /* Change the color as needed */
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="toolbar">
+            <a href="projects.html">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a class="active" href="#home">Home</a>
+            <a href="#computers">Computers</a>
+            <a href="#music">Music</a>
+            <a href="#sports">Sports</a>            
+        </div>
+
+        <!-- Add the new text box -->
+        <div class="textbox">
+            <p>Hello and Welcome! <br><br>             
+                I'm Braedan Chappel. I'm a second year Software Engineering co-op student at the University of Guelph, in Guelph, Ontario Canada.
+                I'm a dedicated Software Engineer with a relentless commitment to quality and perfection. With a deep understanding of good software practices, I strive to create software that is not only functional but also robust, maintainable, and efficient.                 
+                <br><br> My journey in the field of software engineering has been driven by my passion for learning and my pursuit of excellence. I believe that good software is the result of careful design, thorough testing, and a deep understanding of the clients needs.        
+                <br><br> I adhere strictly to best practices in software development, including code reviews, continuous integration, and automated testing. I understand that writing code is as much about communication with other developers as it is about instructing the computer, and I strive to write code that is clean, well-documented, and easy to understand.
+                <br><br> I'm committed to continuous learning and improvement, always staying up-to-date with the latest technologies and methodologies in software development. I understand that in the rapidly evolving field of software engineering, the pursuit of perfection is a journey, not a destination.
+                In every project I undertake, my goal is to deliver software of the highest quality - software that meets the needs of its users, performs efficiently, and stands the test of time.                 
+                <br><br>I look forward to bringing my commitment to quality and good software practices to any potential teams.
+                </p>
+        </div>
+
+        <script>
+            // Array of images
+            var images = ["assets/src/images/Animation/img0.png", "assets/src/images/Animation/img1.png", "assets/src/images/Animation/img2.png", "assets/src/images/Animation/img3.png", "assets/src/images/Animation/img4.png"];
+            
+            var index = 0;
+            
+            // Listen for scroll event
+            window.addEventListener('scroll', function() {
+                // Calculate scroll position
+                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+              
+                // Calculate index of image to show
+                index = Math.floor(scrollPosition / 700) % images.length;
+              
+                // Change image
+                document.getElementById('scrollImage').src = images[index];
+            });
+        </script>            
+    </body>
+</html>
