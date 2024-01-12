@@ -1,58 +1,43 @@
-/* Add @font-face rule */
-@font-face {
-    font-family: 'Helvetica-Neue';  /* Define a name for the font */
-    src: url('assets/fonts/HelveticaNeue-Medium.otf');  /* URL to the font file */
-}
+    /* Add @font-face rule */
+    @font-face {
+        font-family: 'Helvetica-Neue';  /* Define a name for the font */
+        src: url('assets/fonts/HelveticaNeue-Medium.otf');  /* URL to the font file */
+    }
 
-/* Add @font-face rule for the second font */
-@font-face {
-    font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
-    src: url('assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
-}
+    /* Add @font-face rule for the second font */
+    @font-face {
+        font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
+        src: url('assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
+    }
 
-/* Use the custom font */
-body {
-    font-family: 'Helvetica-Neue', 'HelveticaNeue-Light.otf', sans-serif;
-    
-    /*Background Image*/
-    background-image: url('assets/src/images/BG.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    /* Set a minimum height */
-    min-height: 4320px;  /* Adjust as needed */
+    .toolbar {
+        display: inline-flex;
+        justify-content: space-around;
+        background-color: #333;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        border-radius: 3px;
+        padding: 4px;  /* Add padding to toolbar */
+        width: 50.5%
+    }
 
-    /*Top Bar*/
-    justify-content: center;
-    margin: 6; /*float from the top of the screen for the menue bar*/
-}
+    .toolbar a {
+        display: inline-block;
+        transition: background-color 0.3s ease;
+        color: #eaeaea;
+        text-align: justify;
+        padding: 4px 16px;  /* Reduce vertical padding */
+        text-decoration: none;
+        font-size: 25px;
+        border-radius: 3px;
+    }
 
-.toolbar {
-    display: inline-block;
-    background-color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    border-radius: 6px;
-    padding: 4px;  /* Add padding to toolbar */
-}
+    .toolbar a:hover {
+        background-color: #eaeaea;
+        color: #333;
+    }
 
-.toolbar a {
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    color: #eaeaea;
-    text-align: center;
-    padding: 4px 16px;  /* Reduce vertical padding */
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 6px;
-}
-
-.toolbar a:hover {
-    background-color: #eaeaea;
-    color: #333;
-}
-
-.toolbar a.active {
-    background-color: #222222;
-    color: #eaeaea;
-}
+    .toolbar a.active {
+        background-color: #222222;
+        color: #eaeaea;
+    }

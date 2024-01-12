@@ -1,15 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
+
     <head>
         <title>Braedan Chappel</title>
+        <meta charset = "UTF-8">
         <!-- Add favicon -->
-        <link rel="icon" href="assets/src/images/ICO.png">
-
+        <link rel="icon" href="assets/src/images/ICO1.png">
         <!-- Link to toolbar CSS file -->
         <link rel="stylesheet" href="css/toolbar.css">
-
+        <!--textbox style sheet-->
         <link rel="stylesheet" href="css/textbox.css">
-        <!--textbox-->
+
+        <style>
+            body {
+                font-family: 'Helvetica-Neue', 'assets/fonts/HelveticaNeue-Light.otf', sans-serif;
+                /*Background Image*/
+             
+                /*background-repeat: no-repeat;*/
+                background-size: cover;
+                background-color: #eaeaea;
+
+                /* Set a minimum height */
+                min-height: 4320px;  /* Adjust as needed */
+        
+                /*Top Bar*/
+                justify-content: center;
+                margin: 3; /*float from the top of the screen for the menue bar*/
+            }
+
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+
+            #typewriter {
+                color: #3D99C9;
+                font-weight: bold;
+            }
+
+            #cursor { 
+                color: #3D99C9;
+                animation: blink 1s linear infinite;
+
+            }
+
+            @keyframes blink{
+                0%{
+                    opacity: 100%;
+                }
+                50%{
+                    opacity: 0%
+                }
+            }
+
+        </style>
 
     </head>
     
@@ -24,18 +68,67 @@
             <a href="#sports">Sports</a>            
         </div>
 
-        <!-- Add the new text box -->
-        <div class="textbox">
-            <p>Hello and Welcome! <br><br>             
-                I'm Braedan Chappel. I'm a second year Software Engineering co-op student at the University of Guelph, in Guelph, Ontario Canada.
-                I'm a dedicated Software Engineer with a relentless commitment to quality and perfection. With a deep understanding of good software practices, I strive to create software that is not only functional but also robust, maintainable, and efficient.                 
-                <br><br> My journey in the field of software engineering has been driven by my passion for learning and my pursuit of excellence. I believe that good software is the result of careful design, thorough testing, and a deep understanding of the clients needs.        
-                <br><br> I adhere strictly to best practices in software development, including code reviews, continuous integration, and automated testing. I understand that writing code is as much about communication with other developers as it is about instructing the computer, and I strive to write code that is clean, well-documented, and easy to understand.
-                <br><br> I'm committed to continuous learning and improvement, always staying up-to-date with the latest technologies and methodologies in software development. I understand that in the rapidly evolving field of software engineering, the pursuit of perfection is a journey, not a destination.
-                In every project I undertake, my goal is to deliver software of the highest quality - software that meets the needs of its users, performs efficiently, and stands the test of time.                 
-                <br><br>I look forward to bringing my commitment to quality and good software practices to any potential teams.
+        <body>
+            <h1>Welcome! I'm Braedan Chappel<br> I'm a <span id = "typewriter"></span></span><span id = "cursor" >|</span></h1>
+        </body>
+
+        <!-- <div class="textbox">
+
+            <p> I'm a second-year software engineering co-op student at the University of Guelph, in Guelph, Ontario Canada. I am a dedicated Software Engineer with a relentless commitment to quality and perfection. 
+                <br><br>
+                With a deep understanding of good software practices, I strive to create software that is not only functional, but robust, maintainable, and of the highest standards.
+                My journey in the software engineering field has been driven by my passion for learning and my pursuit of excellence. I believe that good software is the result of careful design, thorough testing, and a deep understanding of the client's needs.
+                <br><br>
+                I strictly adhere to best practices in software development, including code reviews, continuous integration, and extensive testing. I understand that writing code is as much about communication with personnel as it is about instructing the computer. I strive to write clean, well-documented, easy to understand, and reliable code.
+                <br><br>
+                I'm committed to continuous learning and improvement, always staying up to date with the latest technologies and methodologies in software development. I understand that in the rapidly evolving field of software engineering, the pursuit of perfection is a journey, not a destination. In every project I undertake, my goal is to deliver software of the highest quality - software that meets the needs of its users, performs efficiently, and stands the test of time.
+                <br><br>
+                I look forward to bringing my commitment to quality and exceptional software practices to any potential teams.  
                 </p>
-        </div>
-          
+        </div> -->
+
+        <script>
+            function sleep (ms){
+                return new Promise((resolve) => setTimeout(resolve, ms));
+            }
+
+            const phrases = ["software engineer.", "guitarist.", "student."];
+            const element = document.getElementById("typewriter");
+
+            let sleepTime = 100;
+            let curPhraseIndex = 0;
+
+            const writeLoop = async () => {
+                while(true){
+                    let curWord = phrases[curPhraseIndex];
+
+                    for(let i = 0; i < curWord.length; i++){
+                        element.innerText = curWord.substring(0, i + 1);
+                        await sleep(sleepTime);
+                    }
+                    await sleep(sleepTime * 20);
+
+                    for(let i = curWord.length; i > 0; i--){
+                        element.innerText = curWord.substring(0, i - 1);
+                        await sleep(sleepTime);
+                    }
+
+                    await sleep(sleepTime * 5);
+
+                    if(curPhraseIndex === phrases.length -1){
+                        curPhraseIndex = 0;
+                    }else{
+                        curPhraseIndex++;
+                    }
+                    
+                }   
+            };
+
+            writeLoop();
+
+        </script>
+
+
     </body>
+    
 </html>

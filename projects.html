@@ -3,21 +3,15 @@
     <head>
         <title>Braedan Chappel</title>
         <!-- Add favicon -->
-        <link rel="icon" href="assets/src/images/ICO.png">
+        <link rel="icon" href="assets/src/images/ICO1.png">
+
+        <!-- Link to toolbar CSS file -->
+        <!-- <link rel="stylesheet" href="css/toolbar.css"> -->
+        
+        <!--textbox style sheet-->
+        <link rel="stylesheet" href="css/textbox.css">
+
         <style>
-            /* Add @font-face rule */
-            @font-face {
-                font-family: 'Helvetica-Neue';  /* Define a name for the font */
-                src: url('assets/fonts/HelveticaNeue-Medium.otf');  /* URL to the font file */
-            }
-
-            /* Add @font-face rule for the second font */
-            @font-face {
-                font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
-                src: url('assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
-            }
-
-            /* Use the custom font */
             body {
                 font-family: 'Helvetica-Neue', 'HelveticaNeue-Light.otf', sans-serif;
                 
@@ -33,59 +27,6 @@
                 justify-content: center;
                 margin: 6; /*float from the top of the screen for the menue bar*/
             }
-            
-            .toolbar {
-                display: inline-block;
-                background-color: #333;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-                overflow: hidden;
-                border-radius: 6px;
-                padding: 4px;  /* Add padding to toolbar */
-            }
-            
-            .toolbar a {
-                display: inline-block;
-                transition: background-color 0.3s ease;
-                color: #eaeaea;
-                text-align: center;
-                padding: 4px 16px;  /* Reduce vertical padding */
-                text-decoration: none;
-                font-size: 16px;
-                border-radius: 6px;
-            }
-            
-            .toolbar a:hover {
-                background-color: #eaeaea;
-                color: #333;
-            }
-            
-            .toolbar a.active {
-                background-color: #222222;
-                color: #eaeaea;
-            }
-        </style>
-    
-        <!--textbox-->
-        <style>
-            /* Add a new style for the text box */
-            .textbox {
-                position: absolute;
-                left: 1;  /* Align to the left */
-                width: 36.3%;  /* Adjust the width as needed */
-                height: auto;  /* Adjust the height as needed */
-                padding: 4px;  /* Same padding as the toolbar */
-                font-size: 18px;  /* Adjust the font size as needed */
-                border-radius: 6px;  /* Rounded edges */
-                background-color: transparent;  /* Grey background */
-            }
-            
-            /* Add padding to the paragraph inside the textbox */
-            .textbox p {
-                padding: 8px;  /* Adjust as needed */
-                font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
-                color: #333;  /* Change the color as needed */
-            }
-
         </style>
     </head>
     

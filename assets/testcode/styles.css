@@ -1,0 +1,23 @@
+.container {display: inline-block;}
+
+.text{
+    font-size: 18px;
+  
+    font-family: 'assets/fonts/JetBrainsMono-Bold.ttf',monospace;
+    
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(26),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50%{ border-color: transparent;}
+}
+
+@keyframes typing{
+    from{ width: 0}
+}

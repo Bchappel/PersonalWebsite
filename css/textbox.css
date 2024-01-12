@@ -1,18 +1,19 @@
-/* Add a new style for the text box */
-.textbox {
-    position: absolute;
-    left: 1;  /* Align to the left */
-    width: 36.3%;  /* Adjust the width as needed */
-    height: auto;  /* Adjust the height as needed */
-    padding: 4px;  /* Same padding as the toolbar */
-    font-size: 18px;  /* Adjust the font size as needed */
-    border-radius: 6px;  /* Rounded edges */
-    background-color: transparent;  /* Grey background */
-}
+    /* Add a new style for the text box */
+    .textbox {
+        position: absolute;
+        top: 110px;
+        left: 1;  /* Align to the left */
+        width: 50%;  /* Adjust the width as needed */
+        height: auto;  /* Adjust the height as needed */
+        padding: 4px;  /* Same padding as the toolbar */
+        font-size: 20px;  /* Adjust the font size as needed */
+        border-radius: 3px;  /* Rounded edges */
+        background-color: transparent;  /* Grey background: #bcbcbc */
+    }
 
-/* Add padding to the paragraph inside the textbox */
-.textbox p {
-    padding: 8px;  /* Adjust as needed */
-    font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
-    color: #333;  /* Change the color as needed */
-}
+    /* Add padding to the paragraph inside the textbox */
+    .textbox p {
+        padding: 8px;  /* Adjust as needed */
+        font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
+        color: #333;  /* Change the color as needed */
+    }
