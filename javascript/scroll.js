@@ -36,7 +36,10 @@ $(window).on('scroll', function() {
     if (st > lastScrollTop && lastScrollTop === 0 && !hasScrolled) {
         // Set the boolean variable to true to indicate that the scroll animation has occurred
         hasScrolled = true;
-        scrollToBox('bottom', '#3D3D3D');
+        scrollToBox('bottom', '#3d3d3d');
+
+        // Trigger the slide-in animation
+        $('.textbox').css('animation', 'slideIn 3s forwards');
     }
 
     // Check if the user is scrolling up

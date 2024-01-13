@@ -1,27 +1,35 @@
-    /* Add a new style for the text box
-    /* Add @font-face rule for the second font */
-    @font-face {
-        font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
-        src: url('../assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
+/* Add @font-face rule for the second font */
+@font-face {
+    font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
+    src: url('../assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
+}
+
+/* Define the keyframes for the slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
     }
-
-
-    .textbox {
-        position: absolute;
-        top: 200%;
-        text-align: left;
-        left: 1;  /* Align to the left */
-        width: 40%;  /* Adjust the width as needed */
-        height: 75%;  /* Adjust the height as needed */
-        padding: 4px;  /* Same padding as the toolbar */
-        font-size: 22px;  /* Adjust the font size as needed */
-        border-radius: 3px;  /* Rounded edges */
-        background-color: transparent;  /* Grey background: #bcbcbc */
+    100% {
+        transform: translateY(0);
     }
+}
 
-    /* Add padding to the paragraph inside the textbox */
-    .textbox p {
-        padding: 8px;  /* Adjust as needed */
-        font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
-        color: #eaeaea;  /* Change the color as needed */
-    } 
+.textbox {
+    position: absolute;
+    top: 200%;
+    text-align: left;
+    left: 1;  /* Align to the left */
+    width: 40%;  /* Adjust the width as needed */
+    height: 75%;  /* Adjust the height as needed */
+    padding: 4px;  /* Same padding as the toolbar */
+    font-size: 22px;  /* Adjust the font size as needed */
+    border-radius: 3px;  /* Rounded edges */
+    background-color: transparent;  /* Grey background: #bcbcbc */
+}
+
+/* Add padding to the paragraph inside the textbox */
+.textbox p {
+    padding: 8px;  /* Adjust as needed */
+    font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
+    color: #eaeaea;  /* Change the color as needed */
+}

@@ -11,15 +11,18 @@
     }
 
     .toolbar {
-        display: inline-flex;
-        justify-content: space-around;
+        position: absolute;
         background-color: #333;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
         overflow: hidden;
         border-radius: 3px;
         padding: 4px;  /* Add padding to toolbar */
-        width: 50.5%
+        top: 180%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+    
+    
 
     .toolbar a {
         display: inline-block;

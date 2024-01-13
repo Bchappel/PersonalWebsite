@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang = "en">
-
     <head>
         <title>Braedan Chappel</title>
         <meta charset = "UTF-8">
-
         <script src="javascript/reload.js"></script>
-
         <!-- page icon -->
         <link rel="icon" href="assets/src/images/ICO1.png">
         <!-- toolbar -->
@@ -17,53 +14,38 @@
         <link rel="stylesheet" href="css/images.css">
         <!-- type writer effect -->
         <link rel="stylesheet" href="css/typewriter.css">
-
         <style>
-
+            /* Add @font-face rule for the second font */
             @font-face {
-                font-family: 'HelveticaNeue-Light';
-                src: url('assets/fonts/HelveticaNeue-Light.otf');
+                font-family: 'HelveticaNeue-Light';  /* Define a name for the second font */
+                src: url('assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
             }
-            
             @font-face {
                 font-family: 'HelveticaNeue-Medium';
                 src: url('assets/fonts/HelveticaNeue-Medium.otf');
             }
-                        
             @font-face {
                 font-family: 'JetBrainsMono-Bold';
                 src: url('assets/fonts/JetBrainsMono-Bold.ttf');
             }
-
             body {
                 font-family: 'HelveticaNeue-Light';
                 background-size: cover;
                 background-color: #eaeaea;
                 max-height: 2160px;
             }
-              
         </style>
-
     </head>
-    
     <body>
-
-        <body>
-            <h1>Hi! I'm Braedan Chappel<br> I'm a <span id = "typewriter"></span></span><span id = "cursor" >|</span></h1>
-        </body>
-
+        <h1>Hi! I'm Braedan Chappel<br> I'm a <span id = "typewriter"></span><span id = "cursor" >|</span></h1>
         <script src="javascript/typewriter.js"></script>
-
         <div class="container">
             <img class="image" src="assets/src/images/test.png" alt="Image 1">
             <img class="image" src="assets/src/images/test.png" alt="Image 2">
         </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"></script>
-
         <script src="javascript/scroll.js"></script>
-
         <div class="textbox">
             <p>
             Hello! I'm Braedan Chappel, a Software Engineering student at the University of Guelph.<br><br> 
@@ -75,5 +57,17 @@
             I look forward to contributing my skills and commitment to potential teams.
             </p>
         </div>
+
+        <div class="toolbar">
+            <a href="projects.html">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a class="active" href="#home">Home</a>
+            <a href="#computers">Computers</a>
+            <a href="#music">Music</a>
+            <a href="#sports">Sports</a>            
+        </div>
+
+
     </body>
 </html>
