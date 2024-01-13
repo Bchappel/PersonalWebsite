@@ -4,131 +4,65 @@
     <head>
         <title>Braedan Chappel</title>
         <meta charset = "UTF-8">
-        <!-- Add favicon -->
+
+        <!-- page icon -->
         <link rel="icon" href="assets/src/images/ICO1.png">
-        <!-- Link to toolbar CSS file -->
+        <!-- toolbar -->
         <link rel="stylesheet" href="css/toolbar.css">
-        <!--textbox style sheet-->
+        <!-- text box -->
         <link rel="stylesheet" href="css/textbox.css">
+        <!-- center images -->
+        <link rel="stylesheet" href="css/images.css">
+        <!-- type writer effect -->
+        <link rel="stylesheet" href="css/typewriter.css">
 
         <style>
+
+            @font-face {
+                font-family: 'HelveticaNeue-Light';
+                src: url('assets/fonts/HelveticaNeue-Light.otf');
+            }
+            
+            @font-face {
+                font-family: 'HelveticaNeue-Medium';
+                src: url('assets/fonts/HelveticaNeue-Medium.otf');
+            }
+                        
+            @font-face {
+                font-family: 'JetBrainsMono-Bold';
+                src: url('assets/fonts/JetBrainsMono-Bold.ttf');
+            }
+
             body {
-                font-family: 'Helvetica-Neue', 'assets/fonts/HelveticaNeue-Light.otf', sans-serif;
-                /*Background Image*/
-             
-                /*background-repeat: no-repeat;*/
+                font-family: 'HelveticaNeue-Light';
                 background-size: cover;
                 background-color: #eaeaea;
-
-                /* Set a minimum height */
-                min-height: 4320px;  /* Adjust as needed */
-        
-                /*Top Bar*/
-                justify-content: center;
-                margin: 3; /*float from the top of the screen for the menue bar*/
+                min-height: 4320px;
             }
-
-            h1{
-                font-size: 50px;
-                text-align: center;
-            }
-
-            #typewriter {
-                color: #3D99C9;
-                font-weight: bold;
-            }
-
-            #cursor { 
-                color: #3D99C9;
-                animation: blink 1s linear infinite;
-
-            }
-
-            @keyframes blink{
-                0%{
-                    opacity: 100%;
-                }
-                50%{
-                    opacity: 0%
-                }
-            }
-
+              
         </style>
 
     </head>
     
     <body>
-        <div class="toolbar">
-            <a href="projects.html">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-            <a class="active" href="#home">Home</a>
-            <a href="#computers">Computers</a>
-            <a href="#music">Music</a>
-            <a href="#sports">Sports</a>            
-        </div>
 
         <body>
-            <h1>Welcome! I'm Braedan Chappel<br> I'm a <span id = "typewriter"></span></span><span id = "cursor" >|</span></h1>
+            <h1>Hi! I'm Braedan Chappel<br> I'm a <span id = "typewriter"></span></span><span id = "cursor" >|</span></h1>
         </body>
 
-        <!-- <div class="textbox">
+        <script src="javascript/typewriter.js"></script>
 
-            <p> I'm a second-year software engineering co-op student at the University of Guelph, in Guelph, Ontario Canada. I am a dedicated Software Engineer with a relentless commitment to quality and perfection. 
-                <br><br>
-                With a deep understanding of good software practices, I strive to create software that is not only functional, but robust, maintainable, and of the highest standards.
-                My journey in the software engineering field has been driven by my passion for learning and my pursuit of excellence. I believe that good software is the result of careful design, thorough testing, and a deep understanding of the client's needs.
-                <br><br>
-                I strictly adhere to best practices in software development, including code reviews, continuous integration, and extensive testing. I understand that writing code is as much about communication with personnel as it is about instructing the computer. I strive to write clean, well-documented, easy to understand, and reliable code.
-                <br><br>
-                I'm committed to continuous learning and improvement, always staying up to date with the latest technologies and methodologies in software development. I understand that in the rapidly evolving field of software engineering, the pursuit of perfection is a journey, not a destination. In every project I undertake, my goal is to deliver software of the highest quality - software that meets the needs of its users, performs efficiently, and stands the test of time.
-                <br><br>
-                I look forward to bringing my commitment to quality and exceptional software practices to any potential teams.  
-                </p>
-        </div> -->
+        <div class="container">
+            <img class="image" src="assets/src/images/test.png" alt="Image 1">
+            <img class="image" src="assets/src/images/test.png" alt="Image 2">
+            <img class="image" src="assets/src/images/test.png" alt="Image 3">
+            <img class="image" src="assets/src/images/test.png" alt="Image 4">
+        </div>
 
-        <script>
-            function sleep (ms){
-                return new Promise((resolve) => setTimeout(resolve, ms));
-            }
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"></script>
 
-            const phrases = ["software engineer.", "guitarist.", "student."];
-            const element = document.getElementById("typewriter");
-
-            let sleepTime = 100;
-            let curPhraseIndex = 0;
-
-            const writeLoop = async () => {
-                while(true){
-                    let curWord = phrases[curPhraseIndex];
-
-                    for(let i = 0; i < curWord.length; i++){
-                        element.innerText = curWord.substring(0, i + 1);
-                        await sleep(sleepTime);
-                    }
-                    await sleep(sleepTime * 20);
-
-                    for(let i = curWord.length; i > 0; i--){
-                        element.innerText = curWord.substring(0, i - 1);
-                        await sleep(sleepTime);
-                    }
-
-                    await sleep(sleepTime * 5);
-
-                    if(curPhraseIndex === phrases.length -1){
-                        curPhraseIndex = 0;
-                    }else{
-                        curPhraseIndex++;
-                    }
-                    
-                }   
-            };
-
-            writeLoop();
-
-        </script>
-
+        <script src="javascript/scroll.js"></script>
 
     </body>
-    
 </html>
