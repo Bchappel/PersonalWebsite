@@ -1,0 +1,33 @@
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+    .code-container {
+        font-family: 'JetBrains Mono', monospace;
+        background-color: #282c34;
+        color: #abb2bf;
+        border-radius: 10px;
+        padding: 20px;
+        overflow: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .keyword {
+        color: #c678dd;
+    }
+
+    .function {
+        color: #61afef;
+    }
+
+    .string {
+        color: #98c379;
+    }
+
+    /*
+    <link rel="stylesheet" href="css/code.css">
+    <pre class="code-container">
+    <code>
+        <span class="keyword">const</span> <span class="function">greet</span> = <span class="string">'Hello, world!'</span>;
+        console.log(<span class="function">greet</span>);
+    </code>
+    </pre> */
