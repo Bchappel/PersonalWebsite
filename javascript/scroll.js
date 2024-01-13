@@ -36,7 +36,7 @@ $(window).on('scroll', function() {
     if (st > lastScrollTop && lastScrollTop === 0 && !hasScrolled) {
         // Set the boolean variable to true to indicate that the scroll animation has occurred
         hasScrolled = true;
-        scrollToBox('bottom', '#3d3d3d');
+        scrollToBox('bottom', '#3D3D3D');
     }
 
     // Check if the user is scrolling up

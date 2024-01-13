@@ -1,4 +1,4 @@
-    /* Add a new style for the text box */
+    /* Add a new style for the text box
     /* Add @font-face rule for the second font */
     @font-face {
         font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
@@ -8,10 +8,11 @@
 
     .textbox {
         position: absolute;
-        top: 165%;
+        top: 200%;
+        text-align: left;
         left: 1;  /* Align to the left */
         width: 40%;  /* Adjust the width as needed */
-        height: auto;  /* Adjust the height as needed */
+        height: 75%;  /* Adjust the height as needed */
         padding: 4px;  /* Same padding as the toolbar */
         font-size: 22px;  /* Adjust the font size as needed */
         border-radius: 3px;  /* Rounded edges */
@@ -23,4 +24,4 @@
         padding: 8px;  /* Adjust as needed */
         font-family: 'HelveticaNeueLight', sans-serif;  /* Change the font as needed */
         color: #eaeaea;  /* Change the color as needed */
-    }
+    } 
