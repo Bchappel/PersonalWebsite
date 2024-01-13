@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Braedan Chappel | Resume</title>
+        <title>Braedan Chappel | Contact</title>
         <meta charset = "UTF-8">
         <script src="javascript/reload.js"></script>
         <!-- page icon -->
         <link rel="icon" href="assets/src/images/ICO1.png">
         <!-- toolbar -->
         <link rel="stylesheet" href="css/topbar.css">
+        <link rel="stylesheet" href="css/style.css">
         <!-- text box -->
         <style>
             /* Add @font-face rule for the second font */
@@ -27,39 +28,29 @@
                 font-family: 'HelveticaNeue-Light';
                 background-size: cover;
                 background-color: #3d3d3d;
-                max-height: 2160px;
-            }
-
-            .pdf-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh; /* Adjust as needed */
-            }
-            .pdf-object {
-                width: 75%; /* Adjust as needed */
-                height: 75%; /* Adjust as needed */
+                max-height: 100%;
             }
 
         </style>
     </head>
     <body>
-
-        <div class="pdf-container">
-            <object data = "assets/Resume.pdf" type="application/pdf" width = 50% height = 800px>
-                <p>Unable to display pdf file</p>
-            </object>
-        </div>
-
         <div class="toolbar">
             <a href="projects.html">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+            <a class ="active" href = "#contact">Contact</a>    
             <a href="index.html">Home</a>
-            <a class ="active" href = "#resume">Resume</a>    
+            <a href ="resume.html">Resume</a>    
             <a href="#computers">Computers</a>
             <a href="#music">Music</a>         
         </div>
+
+        <div id="contactInfo">
+            <h1>Contact Information</h1>
+            <p>I can be reached at 519-993-1304,</p>
+            <p>For personal emails please use braedanchappel@gmail.com</p>
+            <p>For business/work related communication, please use bchappel@uoguelph.ca</p>
+        </div>
+
     </body>
 </html>
 
