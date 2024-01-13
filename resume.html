@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Braedan Chappel | Resume</title>
+        <meta charset = "UTF-8">
+        <script src="javascript/reload.js"></script>
+        <!-- page icon -->
+        <link rel="icon" href="assets/src/images/ICO1.png">
+        <!-- toolbar -->
+        <link rel="stylesheet" href="css/topbar.css">
+        <!-- text box -->
+        <style>
+            /* Add @font-face rule for the second font */
+            @font-face {
+                font-family: 'HelveticaNeue-Light';  /* Define a name for the second font */
+                src: url('assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
+            }
+            @font-face {
+                font-family: 'HelveticaNeue-Medium';
+                src: url('assets/fonts/HelveticaNeue-Medium.otf');
+            }
+            @font-face {
+                font-family: 'JetBrainsMono-Bold';
+                src: url('assets/fonts/JetBrainsMono-Bold.ttf');
+            }
+            body {
+                font-family: 'HelveticaNeue-Light';
+                background-size: cover;
+                background-color: #3d3d3d;
+                max-height: 2160px;
+            }
+
+            .pdf-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Adjust as needed */
+            }
+            .pdf-object {
+                width: 75%; /* Adjust as needed */
+                height: 75%; /* Adjust as needed */
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="pdf-container">
+            <object data = "assets/ResumeIdea.pdf" type="application/pdf" width = 50% height = 800px>
+                <p>Unable to display pdf file</p>
+            </object>
+        </div>
+
+        <div class="toolbar">
+            <a href="projects.html">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="index.html">Home</a>
+            <a class ="active" href = "#resume">Resume</a>    
+            <a href="#computers">Computers</a>
+            <a href="#music">Music</a>         
+        </div>
+    </body>
+</html>
+
+
