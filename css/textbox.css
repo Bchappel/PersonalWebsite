@@ -1,12 +1,19 @@
     /* Add a new style for the text box */
+    /* Add @font-face rule for the second font */
+    @font-face {
+        font-family: 'HelveticaNeueLight';  /* Define a name for the second font */
+        src: url('../assets/fonts/HelveticaNeue-Light.otf');  /* URL to the second font file */
+    }
+
+
     .textbox {
         position: absolute;
-        top: 110px;
+        top: 165%;
         left: 1;  /* Align to the left */
-        width: 50%;  /* Adjust the width as needed */
+        width: 40%;  /* Adjust the width as needed */
         height: auto;  /* Adjust the height as needed */
         padding: 4px;  /* Same padding as the toolbar */
-        font-size: 20px;  /* Adjust the font size as needed */
+        font-size: 22px;  /* Adjust the font size as needed */
         border-radius: 3px;  /* Rounded edges */
         background-color: transparent;  /* Grey background: #bcbcbc */
     }

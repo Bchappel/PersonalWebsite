@@ -7,7 +7,7 @@
         });
         
         // Gradually change the background color during the scroll animation
-        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination, backgroundColor: '#7a7a7a' }, 1500, function() {
+        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination, backgroundColor: '#d5d7e0' }, 1500, function() {
         // Enable scrolling
         $('html, body').css({
             overflow: 'auto',
