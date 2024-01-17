@@ -11,6 +11,9 @@
         <meta property="og:image" content="https://personal-website-bchappel1-6860ff70565ed8021ee7060bf71ff213aa2f.gitlab.io/assets/src/images/ICO1.png">
         <meta property="og:description" content="Braedan Chappel's personal website">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"></script>
+
         <script src="javascript/reload.js"></script>
         <!-- page icon -->
         <link rel="icon" href="assets/src/images/ICO1.png">
@@ -42,33 +45,48 @@
                 background-color: #eaeaea;
                 max-height: 2160px;
             }
+
+            #resizable { 
+                width: 500px;
+                height: 500px;
+                position: absolute;
+                padding-right: 120px;
+                top: 192%;
+                right: 0;
+            }
+            #resizable img { 
+                width: 100%; 
+                height: auto; 
+            }
+            
         </style>
     </head>
     <body>
         <h1>Hi! I'm Braedan Chappel<br> I'm a <span id = "typewriter"></span><span id = "cursor" >|</span></h1>
         <script src="javascript/typewriter.js"></script>
         <div class="container">
-            <img class="image" src="assets/src/images/test.png" alt="Image 1">
-            <img class="image" src="assets/src/images/test.png" alt="Image 2">
+            <img class="image" src="assets/src/images/source/face1.jpeg" alt="Image 1">
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"></script>
+
+        <div id = "resizable">
+            <img class="image" src="assets/src/images/source/guitar1.jpeg" alt="Image 2">
+        </div>
+        
         <script src="javascript/scroll.js"></script>
         <div class="textbox">
-            <p>
-            Hello! I'm Braedan Chappel, a Software Engineering student at the University of Guelph.<br><br> 
+            <p>Hi! I'm Braedan Chappel, a Software Engineering student at the University of Guelph.<br><br> 
             I'm committed to creating robust, efficient, and maintainable software. 
             I adhere to best practices, including code reviews, continuous integration, and automated testing. 
-            I believe in clear communication through well-documented code. <br><br> 
-            I'm committed to continuous learning, staying updated with the latest technologies. 
-            My goal is to deliver high-quality software that meets user needs and stands the test of time.<br><br> 
+            I believe in clear communication through well-documented code.<br><br> 
+            I'm committed to continuous learning and staying updated with the latest technologies. 
+            My ultimate goal is to deliver high-quality software that meets user needs and stands the test of time.<br><br> 
             I look forward to contributing my skills and commitment to potential teams.
             </p>
         </div>
 
         <div class="toolbar">
-            <a href="projects.html">Projects</a>
-            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="experience.html">Experience</a>
             <a href="contact.html">Contact</a>
             <a class="active" href="#home">Home</a>
             <a href="resume.html">Resume</a>   
