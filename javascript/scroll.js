@@ -39,7 +39,7 @@ $(window).on('scroll', function() {
         scrollToBox('bottom', '#3d3d3d');
         
         // Trigger the slide-in animation
-        $('.textbox').css('animation', 'slideIn 3s forwards');
+        //$('.textbox').css('animation', 'slideIn 3s forwards');
     }
 
     // Check if the user is scrolling up
