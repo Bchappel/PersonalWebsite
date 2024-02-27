@@ -1,7 +1,15 @@
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
 :root {
 
-  /*colors*/
-  /*gradient*/
+  /**
+   * colors
+   */
+
+  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -15,35 +23,36 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    #3d99c9 0%, 
+    #3D99C9 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    #3d99c9 0%,
+    #3D99C9 0%,
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    #3d3d3d 0%, /*inner boxes edge*/
+    hsl(0, 0%, 25%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    #3d99c9 0%,   /*bullet points, skills section, and under about me*/
-    #3d99c9;
+    #3D99C9 0%,   /*bullet points, skills sectiom, and under about me*/
+    #214EA0
   );
 
   /* solid */
-  --jet: hsl(0, 0%, 22%); /*inner box border /contour*/
-  --onyx: #3d99c9; /*software engineer tag on the left*/
+
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: #3d3d3d; /*left icons: email,phone, location*/
-  --eerie-black-2: hsl(240, 2%, 12%); /*inner box background colour*/
+  --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: #eaeaea; /*background color*/
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: #3d99c9;
-  --vegas-gold: #3d99c9 0%;
+  --orange-yellow-crayola: #3D99C9;
+  --vegas-gold: rgb(123, 214, 214) 0%;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
